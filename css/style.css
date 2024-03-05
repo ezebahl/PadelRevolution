@@ -16,7 +16,7 @@ header{
     height: fit-content;
 }
 
-nav{
+.navHeader{
     background-color: #0d003b;
     opacity: 90%;
 }
@@ -151,12 +151,16 @@ h3{
     width: 36px;
 }
 
+.logosPremios{
+    width: 36px;
+}
+
 p.bodyIndex{
     color: #0d003b;
     font-size: small;
 }
 
-.contenedorOrga{
+.contenedorNoCarrouselWeb{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -179,6 +183,10 @@ p.bodyIndex{
 
 .gridImage img{
     width: 20rem;
+}
+
+.mobileCarrousel{
+    display: none;
 }
 
 #stepTorneo{
@@ -239,6 +247,11 @@ p.bodyIndex{
 .contactoClass{
     display: flex;  
     margin-top: 20px 0px;
+    
+}
+
+.contactoClass div{
+    width: 100%;
 }
 
 .contactoImg{
@@ -248,10 +261,6 @@ p.bodyIndex{
     background-repeat: no-repeat;
     background-position-x: center;
     
-}
-
-.contactoClass div{
-    width: 100%;
 }
 
 .formClass{
@@ -297,8 +306,9 @@ input[type="submit"]:hover{
     background-color: #0d003b;
 }
 
-button.indexButton {
-    padding: 10px 30px;
+
+.searchButtonTorneo{
+    padding: 4px 30px;
     font-size: 14px;
     background-color: #6ede29;
     color: white;
@@ -308,7 +318,7 @@ button.indexButton {
     margin-left: 5px;
 }
 
-button.indexButton:hover{
+.searchButtonTorneo:hover{
     background-color: #0d003b;
 }
 
@@ -322,6 +332,8 @@ button.torneoStartedButton{
     border: 1px solid transparent;
     cursor: pointer;
     margin-left: auto;
+    height: 30px;
+    min-width: 85px;
 }
 
 button:hover.torneoStartedButton{
@@ -339,6 +351,8 @@ button.torneoPendingButton{
     margin-left: auto;
     border-radius: 5px;
     border: 1px solid transparent;
+    height: 30px;
+    min-width: 85px;
 }
 
 button:hover.torneoPendingButton{
@@ -490,7 +504,7 @@ button:hover.torneoPendingButton{
     grid-row: 7/8;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .tPaging ul{
@@ -498,25 +512,6 @@ button:hover.torneoPendingButton{
     list-style-type: none;
     padding: 0;
 }
-
-.tPaging ul li{
-    width: 40px; 
-    height: 40px; 
-    border: 1px solid #818181; 
-    border-radius: 50%; 
-    margin: 5px;
-    background-color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-}
-
-.tPaging ul li:hover{
-    background-color: #0d003b;
-    color: white;
-}
-
 
 footer{
     background-color: #0E0A3B;
@@ -560,7 +555,11 @@ footer h5{
 #tutos{
     display: flex;
     flex-direction: column;
+}
 
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
 }
 
 .tutosGral{
@@ -594,6 +593,7 @@ h2.tutosPage{
     font-size: 26px;
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
 h2.tutosPage:nth-of-type(2){
@@ -617,6 +617,35 @@ p.tutosPage{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.storeTitle{
+    padding: 20px;
+}
+
+.storeSubtitle{
+    font-size: 32px;
+    margin: 0;
+    padding: 20px;
+    color: #0d003b;
+}
+
+.col-md-3{
+    padding:0 12px;
+    margin: 0 !important;
+}
+
+.players{
+    width: 300px !important;
+}
+
+.col{
+    margin: 0 !important;
+    padding: 12px;
+}
+
+.row{
+    margin: 0 !important;
 }
 
 main{        
@@ -660,7 +689,6 @@ h6.card-title {
     font-size: 20px;
     font-weight: bold;
     margin-right: 20px;
-
 }
 
 p.itemsClass{
@@ -678,6 +706,19 @@ del.priceClass{
     font-size: 14px;
 }
 
+.textTienda{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 46px;
+    margin: 0;
+}
+
+.card-img-overlay{
+    display: flex;
+    align-items: end;
+}
+
 #contact{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -693,9 +734,27 @@ del.priceClass{
     justify-content: center;
 }
 
-.contactoClass div iframe{
-    height: 100%;
+.contactoPage{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
+}
+
+.contactMap{
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactMap iframe{
     width: 100%;
+    height: 90%;
+}
+
+.contactForm{
+    width: 50%;
 }
 
 .infoClass{
@@ -822,28 +881,32 @@ del.priceClass{
         display: inline;
     }
 
-    .contenedorOrga{
+    .contenedorNoCarrouselWeb{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         align-items: center;
         justify-content: center;
+        display: none;
+    }
+
+    .mobileCarrousel{
+        display: initial;
+    }
+    .carousel{ 
+        height: 130px;
+    }
+
+    .carousel-indicators button{
+        height: 10px;
+        width: 10px;
+        color: #6ede29;
+        background-color: #6ede29;
     }
 
     .gridImage{
         display: flex;
-        grid-row: 1/4;
-        grid-column: 1/2;
         justify-content: center;
-    }
-    
-    .gridItems{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0;
     }
     
     .gridImage img{
@@ -852,6 +915,7 @@ del.priceClass{
 
     .bodyIndex{
         text-align: center;
+        margin: 0;
     }
 
     #stepTorneo{
@@ -886,12 +950,183 @@ del.priceClass{
     }
 
     .logosFooter{
-        width: 20px;
+        width: 26px;
+    }
+
+    .socialnetworks div{
+        display: flex;
+        flex-direction: column;
     }
     
     .socialnetworks a{
-        padding: 0px 10px;
+        padding: 5px 10px;
+    }
+
+    .labelClass{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: #0d003b;
+        font-size: large;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .labelClass div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    
+    .labelClass select{
+        width: 100%;
+    }
+    
+    .labelClass input{
+        width: 60%;
+    }
+
+    .summary{
+        display: none;
+    }
+
+    #torneos{
+        grid-template-columns: 1fr;
+    }
+
+    .inscripcionTorneos{
+        padding: 15px;
+    }
+
+    .logoTorneo{
+        display: none;
+    }
+
+    .infoTorneo{
+        width: 100%;
+    }
+
+    .torneosPage{
+        margin: 0;
+    }
+
+    h2.torneosPage{
+        font-size: 16px;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    p.torneosPage{
+        font-size: 14px;
+    }
+
+    .tPaging{
+        grid-row: 7/8;
+    }
+
+    .tutosGral{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tutosGral:nth-of-type(1) {
+        flex-direction: column-reverse;
+    }
+
+    .tutosGral:nth-of-type(3) {
+        flex-direction: column-reverse;
     }
 
 
+    .tutosVideo{
+        width: 100%;
+    }
+
+    .tutosText{
+        width: 100%;
+    }
+
+    h2.tutosPage{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    p.tutosPage{
+        font-size: 14px;
+    }
+
+    .storeTitle{
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .storeSubtitle{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .col-md-3{
+        margin: 6px 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+
+    .textTienda{
+        font-size: 36px;
+    }
+
+    .card{
+        width: 60%;
+    }
+
+    #contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 4fr 4fr;
+    }
+
+    .contactTitle{
+        grid-row: 1/2;
+        padding-top: 12px;
+    }
+
+    .contactTitle h1{
+        font-size: 26px;
+    }
+
+    .contactoSubTitle{
+        font-size: 20px;
+    }
+
+    .contactMap{
+        height: 400px;
+    }
+
+    .contactoPage{
+        grid-row: 2/3;
+        flex-direction: column-reverse;
+    }
+
+    .contactoPage div{
+        width: 100%;
+    }
+
+    .infoClass{
+        grid-row: 3/4;
+        flex-direction: column;
+    }
+
+    .infoClass div{
+        width: 100%;
+    }
 }
