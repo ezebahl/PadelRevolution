@@ -825,6 +825,11 @@ del.priceClass{
         width:100%;
     }
 
+    .navImg img{
+        width: 70px;
+        height: fit-content;
+    }
+
     .contenedorAccesoButton h3{
         display: none;
     }
@@ -951,6 +956,10 @@ del.priceClass{
 
     .logosFooter{
         width: 26px;
+    }
+
+    footer img{
+        width: 70px;
     }
 
     .socialnetworks div{
