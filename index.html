@@ -8,12 +8,13 @@
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top navHeader">
         <div class="container-fluid">
-            <a class="navbar-brand navImg" href="#"><img src="./images/logo-padel.png" alt="logopadelrevolution"></a>
+            <a class="navbar-brand" href="#"><img src="./images/logo-padel.png" alt="logopadelrevolution"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,8 +33,8 @@
         <div class="contenedorAcceso">
             <div class="contenedorAccesoButton">
                 <div>
-                    <h1 class="titleIndex">La plataforma integral para la gestión de torneos</h1>
-                    <h2 class="bodyIndex">Donde la pasión se encuentra con la eficiencia en la organización</h2>
+                    <h1>La plataforma integral de torneos</h1>
+                    <h2>Donde la pasión se encuentra con la eficiencia</h2>
                     <h3>Ingresa a tu perfil</h3>
                 </div>
                 <div>
@@ -49,50 +50,50 @@
     <main>
         <section>
             <h3 class="bodyIndex">La revolución del padel</h3>          
-                <div class="contenedorCardsPadre">
-                    <div class="contenedorCards">
+                <div class="contenedorCards">
+                    <div class="contenedorCardsHijo" data-aos="zoom-in">
                         <div>
                             <img src="./images/specification-logos/padelPlayer.svg" alt="logo jugadores" class="logos">
                         </div>
                         <div>
-                            <p class="cardsText">+3500</p> 
-                            <p class="cardsText">Jugadores</p>
+                            <p>+3500</p> 
+                            <p>Jugadores</p>
                         </div>
                     </div>
-                    <div class="contenedorCards">
+                    <div class="contenedorCardsHijo" data-aos="zoom-in">
                         <div>
                             <img src="./images/specification-logos/ballPadel.svg" alt="logo pelota" class="logos">
                         </div>
                         <div>
-                            <p class="cardsText">+500</p>
-                            <p class="cardsText">Torneos</p>
+                            <p>+500</p>
+                            <p>Torneos</p>
                         </div>
                     </div>
-                    <div class="contenedorCards">
+                    <div class="contenedorCardsHijo" data-aos="zoom-in">
                         <div class="contenedorCardsImg">
                             <img src="./images/specification-logos/clubPadel.svg" alt="logo club" class="logos">
                         </div>
                         <div>
-                            <p class="cardsText">+70</p>
-                            <p class="cardsText">Clubes</p>
+                            <p>+70</p>
+                            <p>Clubes</p>
                         </div>
                     </div>
-                    <div class="contenedorCards">
+                    <div class="contenedorCardsHijo" data-aos="zoom-in">
                         <div class="contenedorCardsImg">
                             <img src="./images/specification-logos/worldPadel.svg" alt="logo mundo" class="logos">
                         </div>
                         <div>
-                            <p class="cardsText">+5</p>
-                            <p class="cardsText">Países</p>
+                            <p>+5</p>
+                            <p>Países</p>
                         </div>
                     </div>
-                    <div class="contenedorCards">
+                    <div class="contenedorCardsHijo" data-aos="zoom-in">
                         <div class="contenedorCardsImg">
                             <img src="./images/specification-logos/cupPadel.svg" alt="logo copa" class="logos">
                         </div>
                         <div>
-                            <p class="cardsText">Premios en</p>
-                            <p class="cardsText">indumentaria y palas</p>
+                            <p>Premios en</p>
+                            <p>indumentaria y palas</p>
                         </div>
                     </div>
                 </div>
@@ -100,7 +101,7 @@
         <section>
             <h3 class="bodyIndex">Organiza competiciones funcionales y automatizadas sin esfuerzo</h3>
             <div class="mobileCarrousel">
-                <div class="gridImage">
+                <div class="mobileCarrouselImage">
                     <img src="./images/app-img-organizacion.png" alt="app padel revolution">
                 </div>
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -135,8 +136,8 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="1500">
                             <img src="./images/index-core-logos/court.png" alt="canchadepadel" class="d-block mx-auto logosPremios">
-                            <h4 class="bodyIndex">Generación automática de cuadros</h4>
-                            <p class="bodyIndex">de forma instantanea</p>
+                            <h4 class="bodyIndex">Generación de cuadros</h4>
+                            <p class="bodyIndex">de forma instantánea y automática</p>
                         </div>
                         <div class="carousel-item" data-bs-interval="1500">
                             <img src="./images/index-core-logos/touch.png" alt="touch" class="d-block mx-auto logosPremios">
@@ -185,17 +186,17 @@
         <section id="stepTorneo">
             <h3>Crea tu torneo paso a paso</h3>
             <div class="linea"></div>
-            <div class="steps">1</div>
-            <div><p class="stepsText">Entra en tu panel de control</p></div>
-            <div class="steps">2</div>
-            <div><p class="stepsText">Crea un torneo indicando fechas y precios</p></div>
-            <div class="steps">3</div>
-            <div><p class="stepsText">Promocioná el torneo para que los jugadores se inscriban o hazlo tu mismo</p></div>
-            <div class="steps">4</div>
-            <div><p class="stepsText">Generá los cuadros y ¡A JUGAR!</div>
+            <div class="steps" data-aos="zoom-in">1</div>
+            <div data-aos="zoom-in"><p class="stepsText">Entra en tu panel de control</p></div>
+            <div class="steps" data-aos="zoom-in">2</div>
+            <div data-aos="zoom-in"><p class="stepsText">Crea un torneo indicando fechas y precios</p></div>
+            <div class="steps" data-aos="zoom-in">3</div>
+            <div data-aos="zoom-in"><p class="stepsText">Promocioná el torneo para que los jugadores se inscriban o hazlo tu mismo</p></div>
+            <div class="steps" data-aos="zoom-in">4</div>
+            <div data-aos="zoom-in"><p class="stepsText">Generá los cuadros y ¡A JUGAR!</div>
         </section>
         <section class="contactoClass">
-            <div class="contactoImg"></div>
+            <div class="contactoClassImg"></div>
             <div>
                 <form class="formClass" action="form.php" method="POST">
                     <div>
@@ -242,5 +243,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

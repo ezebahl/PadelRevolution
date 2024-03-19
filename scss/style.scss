@@ -1,0 +1,53 @@
+@mixin font($size,$color,$weight,$align){
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    text-align: $align;
+};
+
+@mixin flex($display,$direction,$align,$justify){
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+};
+
+@mixin grid($display,$columns,$rows,$justify,$align){
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    justify-items: $justify;
+    align-items: $align;
+};
+
+$title-fontsize: 36px;
+$subtitle-fontsize: 26px;
+$mediumtitle-fontsize: 20px;
+$p-fontsize:16px;
+$small-fontsize:14px;
+$main-color: #0d003b;
+
+
+//Nav & Header//
+@import './nav.scss/navheader';
+
+//General//
+@import './general.scss/overall';
+
+
+//Index//
+@import './general.scss/index';
+@import './general.scss/logos';
+@import './cards.scss/cards';
+
+//Pages//
+@import './torneo.scss/torneo';
+@import './tutos.scss/tutos';
+@import './store.scss/store';
+@import './contacto.scss/contact';
+
+//Footer//
+@import './footer.scss/footer';
+
+//MediaQuery//
+@import './mediasqueries.scss/media768';

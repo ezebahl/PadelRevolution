@@ -1,0 +1,136 @@
+
+
+.bodyIndex{
+    @include font(none,$main-color,bold,none);
+}
+
+h3.bodyIndex{
+    @include font($title-fontsize,none,bolder,center);
+    margin-top: 20px;
+}
+
+p.bodyIndex{
+    @include font($p-fontsize,$main-color,none,none);
+
+}
+
+//Organizacion 
+
+.contenedorNoCarrouselWeb{
+    @include grid(grid,repeat(3,1fr),repeat(3,1fr),start,center);
+    padding: 30px;
+
+    .gridItems{
+        margin: 40px;
+    }
+
+    .gridImage{
+        width: 100%;
+        height: 100%;
+        grid-row: 1/4;
+        grid-column: 2/3;
+
+        img{
+            width: 20rem;
+        }
+    }
+}
+
+.mobileCarrousel{
+    display: none;
+}
+
+//Crear torneos
+
+#stepTorneo{
+    @include grid(grid,repeat(4,1fr),repeat(3,1fr),center,center);
+    background-color: $main-color;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+
+    h3{
+        @include font($title-fontsize,white,300,center);
+        padding-bottom: 10px;
+        grid-column: 1/5;
+    }
+
+    .linea {
+        position: absolute;
+        top: calc(50% - 10px); 
+        left: 0;
+        width: 100%; 
+        height: 2px; 
+        background-color: #818181; 
+        z-index: 1; 
+    }
+
+    .steps{
+        @include flex(flex,row,center,center);
+        @include font(none,#6ede29,bold,none);
+        width: 40px; 
+        height: 40px; 
+        border: 2px solid #818181; 
+        border-radius: 50%; 
+        position: relative;
+        background-color: white;
+        z-index: 2;
+        grid-row: 2/3;
+    }
+
+    .stepsText{
+        @include font(none,white,bold,none);
+        padding: 0px 20px;
+        font-weight: 100;
+        grid-row: 3/4; 
+    }
+}
+
+//Contacto
+.contactoClass{
+    display: flex;  
+    margin-top: 20px 0px;
+    &Img{
+        width: 50%;
+        background-image: url('../images/tapia.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+
+    div{
+        width: 100%;
+        .formClass{
+            @include font(none,$main-color,300,none);
+            padding: 30px;
+            width: 100%;
+            div{
+                margin-bottom: 10px;
+            }
+            input{
+                border: 1px solid #b4b3b3;
+                border-radius: 10px;
+                width: 100%;
+                padding: 6px 0px 6px 12px ;
+            }
+            .indexButton {
+                @include font($small-fontsize,white,bold,none);
+                padding: 10px 30px;
+                background-color: #6ede29;
+                border-radius: 15px;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    background-color: $main-color;
+                }
+            }
+            textarea{
+                border: 1px solid #b4b3b3;
+                border-radius: 10px;
+                width: 100%;
+                resize: none;
+                padding: 6px 0px 6px 12px ;
+            }
+        }
+    }
+}

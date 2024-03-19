@@ -1,0 +1,43 @@
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+
+#tutos{
+    @include flex(flex,column,none,none);
+    h1{
+        padding: 20px 0px;
+    }
+    h2{
+        @include font($subtitle-fontsize,#2b2929,none,center);
+        padding: 20px;
+        margin: 0;
+        &:nth-of-type(2){
+            background-color:#ece9f8;
+        }
+    }
+    .tutosGral{
+        display: flex;
+        &:nth-of-type(2) {
+            background-color:#ece9f8;
+        }
+        &Text{
+            width:  60%;
+            padding: 20px;
+            p{
+                @include font($p-fontsize,#2b2929,none,justify);   
+            }
+        }
+        &Video{
+            @include flex(flex,row,center,center);
+            width: 40%;
+            padding-bottom: 20px;
+            iframe{
+                width: 500px;
+                height: 255px ;
+            }
+        }
+    }
+}
+
+

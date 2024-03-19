@@ -1,0 +1,30 @@
+//global
+
+* {  
+    font-family: 'DM Sans', sans-serif;
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    @include flex(flex,column,none,none);
+}
+
+h1{
+    @include font($title-fontsize, $main-color, none, center);
+
+}
+
+h3{
+    color: #363636;
+}
+
+body{
+    background-color: #d9d7e1;
+}
+
+main{        
+    background-color: #d9d7e1;
+}

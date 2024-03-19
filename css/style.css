@@ -1,1139 +1,1098 @@
-
-
-* {  
-    font-family: 'DM Sans', sans-serif;
-    margin:0;
-}
-
-header{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.navImg img{
-    width: 100px;
-}
-
-.navHeader{
-    background-color: #0d003b;
-    opacity: 90%;
-}
-
-.contenedorAcceso{
-    display: flex;
-    background-image: url('../images/Banner-header.jpeg');
-    background-size: cover;
-    background-position-x: center;
-    padding-top: 10px;
-}
-
-body{
-    background-color: #d9d7e1;
-}
-
-.bodyIndex{
-    font-weight: bold;
-    color: #0d003b;
-}
-
-h3.bodyIndex{
-    font-size: 36px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 20px 0px;
-
-}
-
-h1{
-    color: #0d003b;
-    text-align: center;
-    font-size: 36px;
-}
-
-.titleIndex{
-    color:  #f7f7f7;
-    text-align: center;
-    font-size: 40px;
-    padding: 30px 30px 10px 30px;
-
-}
-
-h2.bodyIndex{
-    color: #f7f7f7;
-    text-align: center;
-    font-weight: 300;
-}
-
-.contenedorAcceso{
-    display: flex;
-}
-
-.contenedorAccesoButton{
-    display: flex;
-    flex-direction: column;
-    width:70%;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedorAccesoButton h3{
-    padding:40px 10px 10px 10px;
-    color: #f7f7f7;
-    text-align: center;
-    font-weight: 300;
-}
-
-.contenedorAccesoButton button{
-    padding: 10px 40px;
-    border-radius: 15px;
-    border: 1px solid white;
-    cursor: pointer;
-    background-color: #6ede29;
-    color: white;
-}
-
-.contenedorAccesoButton button:hover{
-    background-color: #0d003b;
-    border: 1px solid white;
-}
-
-.contenedorAccesoImg{
-    padding-left: 10px;
-}
-.contenedorAccesoImg img{
-    width: 300px ;
-}
-
-h3{
-    color: #363636;
-}
-
-.contenedorCardsPadre{
-    display: flex;
-    padding: 10px;
-    margin: 10px;
-    justify-content: center;
-}
-
-.contenedorCards{
-    display: flex;
-    flex-direction: column;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    padding: 15px;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    box-shadow: 1px 1px 6px 1px #969898;
-    margin: 30px;
-    width: 200px;
-    height: 150px;
-}
-
-.contenedorCards img{
-    margin-bottom: 20px;
-}
-
-.cardsText{
-    color: #0d003b;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.logos{
-    width: 40px;
-}
-
-.logosFooter{
-    width: 36px;
-}
-
-.logosPremios{
-    width: 36px;
-}
-
-p.bodyIndex{
-    color: #0d003b;
-    font-size: small;
-}
-
-.contenedorNoCarrouselWeb{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    justify-items: start;
-    align-items: center;
-    padding: 30px;
-}
-
-
-.gridImage{
-    width: 100%;
-    height: 100%;
-    grid-row: 1/4;
-    grid-column: 2/3;
-}
-
-.gridItems{
-    margin: 40px;
-}
-
-.gridImage img{
-    width: 20rem;
-}
-
-.mobileCarrousel{
-    display: none;
+.navHeader {
+  background-color: #0d003b;
+  opacity: 90%;
 }
-
-#stepTorneo{
-    background-color: #0d003b;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-#stepTorneo h3{
-    color: white;
-    font-weight: 300;
-    font-size: 38px;
-    text-align: center;
-    padding-bottom: 10px;
-    grid-column: 1/5;
-}
-
-.linea {
-    position: absolute;
-    top: calc(50% - 10px); /* Posiciona la línea en el centro de la fila 2 */
-    left: 0;
-    width: 100%; /* Ancho de la línea */
-    height: 2px; /* Grosor de la línea */
-    background-color: #818181; /* Color de la línea */
-    z-index: 1; /* Asegura que la línea esté delante del fondo del contenedor */
-}
-
-.steps{
-    width: 40px; 
-    height: 40px; 
-    border: 2px solid #818181; 
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #6ede29;
-    font-weight: bold;
-    position: relative;
-    background-color: white;
-    z-index: 2;
-    grid-row: 2/3;
-}
-
-.stepsText{
-    font-weight: bold;
-    padding: 0px 20px;
-    color: white;
-    font-weight: 100;
-    grid-row: 3/4; 
-}
-
-.contactoClass{
-    display: flex;  
-    margin-top: 20px 0px;
-    
-}
-
-.contactoClass div{
-    width: 100%;
-}
-
-.contactoImg{
-    width: 50%;
-    background-image: url('../images/tapia.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    
-}
-
-.formClass{
-    color: #0d003b;
-    font-weight: 300;
-    padding: 30px;
-    width: 100%;
-}
-
-.formClass div{
-    margin-bottom: 10px;
-}
-
-.formClass input{
-    border: 1px solid #b4b3b3;
-    border-radius: 10px;
-    width: 100%;
-    padding: 6px 0px 6px 12px ;
-
-}
-
-.formClass textarea{
-    border: 1px solid #b4b3b3;
-    border-radius: 10px;
-    width: 100%;
-    resize: none;
-    padding: 6px 0px 6px 12px ;
-}
-
-
-input[type="submit"].indexButton {
-    padding: 10px 30px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #6ede29;
-    color: white;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover{
-    background-color: #0d003b;
-}
-
-
-.searchButtonTorneo{
-    padding: 4px 30px;
-    font-size: 14px;
-    background-color: #6ede29;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-.searchButtonTorneo:hover{
-    background-color: #0d003b;
-}
-
-button.torneoStartedButton{
-    padding: 5px 15px;
-    font-size: 12px;
-    font-weight: 550;
-    background-color: lightgray;
-    color: #0d003b;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    margin-left: auto;
-    height: 30px;
-    min-width: 85px;
-}
-
-button:hover.torneoStartedButton{
-    background-color: #0d003b;
-    color: white;
-}
-
-button.torneoPendingButton{
-    padding: 5px 15px;
-    font-size: 12px;
-    font-weight: 550;
-    background-color: lightgray;
-    color: #0d003b;
-    cursor: pointer;
-    margin-left: auto;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    height: 30px;
-    min-width: 85px;
-}
-
-button:hover.torneoPendingButton{
-    background-color: #6ede29;
-    color: white;
-}
-
-
-.labelClass{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #0d003b;
-    font-size: large;
-    margin-bottom: 10px;
-    padding: 20px;
-}
-
-.labelClass label{
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.labelClass select{
-    border-radius: 5px;
-    width: 170px;
-    height: 30px;
-    border: 1px solid #555555;
-    color: #555555;
-    font-weight: 500;
-    padding-left: 10px;
-}
-
-.labelClass input{
-    border-radius: 10px;
-    width: 170px;
-    border: 1px solid #555555;
-    height: 30px;
-    color: #555555;
-    font-weight: 500;
-    padding-left: 10px;
-}
-
-#torneos{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(7,1fr);
-    justify-items: center;
-    row-gap: 10px;
+.navHeader img {
+  width: 100px;
 }
 
-.inscripcionTorneos{
-    grid-column: 1/2;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    padding: 30px;
-    text-align: left;
-    box-shadow: 1px 1px 6px 1px #969898;
-    width: 80%;
-    height: auto;
-    display: flex;
-    align-items: center;    
-    border-left: 3px solid green;
+.contenedorAcceso {
+  display: flex;
+  background-image: url("../images/Banner-header.jpeg");
+  background-size: cover;
+  background-position-x: center;
+  padding-top: 10px;
 }
-
-.inscripcionTorneos:first-child {
-    border-left-color: blue;
+.contenedorAccesoButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 }
-
-.logoTorneo{
-    width: 20%;
+.contenedorAccesoButton h1 {
+  padding: 30px 30px 10px 30px;
+  font-size: 36px;
+  color: #f7f7f7;
+  font-weight: 500;
+  text-align: center;
 }
-
-.infoTorneo{
-    width: 80%;
-    padding-left: 20px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
+.contenedorAccesoButton h2 {
+  font-size: 26px;
+  color: #f7f7f7;
+  font-weight: 300;
+  text-align: center;
 }
-
-.infoTorneo div{
-    display: flex;
-    flex: auto;
-    border-bottom: 2px solid #E9E9E9;
-    padding-bottom: 5px;
+.contenedorAccesoButton h3 {
+  padding: 40px 10px 10px 10px;
+  font-size: 20px;
+  color: #f7f7f7;
+  font-weight: 300;
+  text-align: center;
 }
-
-
-
-.summary{
-    grid-column: 2/3;
-    grid-row: 1/3;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+.contenedorAccesoButton button {
+  padding: 10px 40px;
+  border-radius: 15px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: #6ede29;
+  color: white;
 }
-
-.summaryHeader{
-    background-color: #0d003b;
-    display: flex;
-    color: white;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
+.contenedorAccesoButton button:hover {
+  background-color: #0d003b;
+  border: 1px solid white;
 }
-
-.summaryHeader button{
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
+.contenedorAccesoImg {
+  padding-left: 10px;
 }
-
-.summaryHeader h2{
-    font-size: 20px;
-    font-weight: 400;
+.contenedorAccesoImg img {
+  width: 300px;
 }
 
-.summaryTorneo{
-    display: flex;
-    flex-direction: column;
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.summaryTorneo div{
-    background-color: white;
-    height: 100%;
-    padding: 10px;
-    text-align: left;
-    height: auto;
-    border-bottom: 1px solid #cccccc;
-    border-right: 2px solid #cccccc;
-    border-left: 3px solid green;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
 }
 
-.summaryTorneo h3{
-    font-size: 20px;
+h1 {
+  font-size: 36px;
+  color: #0d003b;
+  font-weight: none;
+  text-align: center;
 }
 
-.summaryTorneo p{
-    font-size: 12px;
-    cursor: pointer;
+h3 {
+  color: #363636;
 }
 
-.tPaging{
-    grid-column: 1/2;
-    grid-row: 7/8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  background-color: #d9d7e1;
 }
 
-.tPaging ul{
-    display: flex;
-    list-style-type: none;
-    padding: 0;
+main {
+  background-color: #d9d7e1;
 }
 
-footer{
-    background-color: #0E0A3B;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    justify-items: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 12px;
+.bodyIndex {
+  font-size: none;
+  color: #0d003b;
+  font-weight: bold;
+  text-align: none;
 }
 
-footer img{
-    width: 100px;
+h3.bodyIndex {
+  font-size: 36px;
+  color: none;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
 }
 
-footer h5{
-    color: white;
-    font-weight: lighter;
-    margin-top: 10px;
-    font-size: 12px;
+p.bodyIndex {
+  font-size: 16px;
+  color: #0d003b;
+  font-weight: none;
+  text-align: none;
 }
 
-.socialnetworks{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.contenedorNoCarrouselWeb {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: start;
+  align-items: center;
+  padding: 30px;
 }
-
-.socialnetworks a{
-    padding: 0 10px;
+.contenedorNoCarrouselWeb .gridItems {
+  margin: 40px;
 }
-
-.mailTo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: end;
-
+.contenedorNoCarrouselWeb .gridImage {
+  width: 100%;
+  height: 100%;
+  grid-row: 1/4;
+  grid-column: 2/3;
 }
-
-#tutos{
-    display: flex;
-    flex-direction: column;
+.contenedorNoCarrouselWeb .gridImage img {
+  width: 20rem;
 }
 
-[aria-expanded="false"] > .expanded,
-[aria-expanded="true"] > .collapsed {
+.mobileCarrousel {
   display: none;
 }
 
-.tutosGral{
-    display: flex;
+#stepTorneo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: #0d003b;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+#stepTorneo h3 {
+  font-size: 36px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 10px;
+  grid-column: 1/5;
+}
+#stepTorneo .linea {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #818181;
+  z-index: 1;
+}
+#stepTorneo .steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: none;
+  color: #6ede29;
+  font-weight: bold;
+  text-align: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #818181;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+  grid-row: 2/3;
+}
+#stepTorneo .stepsText {
+  font-size: none;
+  color: white;
+  font-weight: bold;
+  text-align: none;
+  padding: 0px 20px;
+  font-weight: 100;
+  grid-row: 3/4;
 }
 
-.tutosText{
-    width:  60%;
-    padding: 20px;
+.contactoClass {
+  display: flex;
+  margin-top: 20px 0px;
+}
+.contactoClassImg {
+  width: 50%;
+  background-image: url("../images/tapia.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.contactoClass div {
+  width: 100%;
+}
+.contactoClass div .formClass {
+  font-size: none;
+  color: #0d003b;
+  font-weight: 300;
+  text-align: none;
+  padding: 30px;
+  width: 100%;
+}
+.contactoClass div .formClass div {
+  margin-bottom: 10px;
+}
+.contactoClass div .formClass input {
+  border: 1px solid #b4b3b3;
+  border-radius: 10px;
+  width: 100%;
+  padding: 6px 0px 6px 12px;
+}
+.contactoClass div .formClass .indexButton {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: none;
+  padding: 10px 30px;
+  background-color: #6ede29;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.contactoClass div .formClass .indexButton:hover {
+  background-color: #0d003b;
+}
+.contactoClass div .formClass textarea {
+  border: 1px solid #b4b3b3;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+  padding: 6px 0px 6px 12px;
 }
 
-.tutosVideo{
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
+.logos {
+  width: 40px;
 }
 
-.tutosVideo iframe{
-    width: 500px;
-    height: 255px ;
+.logosFooter {
+  width: 36px;
 }
 
-h1.tutosPage{
-    padding: 20px 0px;
+.logosPremios {
+  width: 36px;
 }
 
-h2.tutosPage{
-    color: #2b2929;
-    font-size: 26px;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
+.logoContacto {
+  width: 70px;
 }
 
-h2.tutosPage:nth-of-type(2){
-    background-color:#ece9f8;
+.contenedorCards {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+.contenedorCardsHijo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 1px 1px 6px 1px #969898;
+  margin: 30px;
+  width: 200px;
+  height: 150px;
+}
+.contenedorCardsHijo p {
+  font-size: 16px;
+  color: #0d003b;
+  font-weight: bold;
+  text-align: none;
+  margin: 0;
+}
+.contenedorCardsHijo img {
+  margin-bottom: 20px;
 }
 
-.tutosGral:nth-of-type(2) {
-    background-color:#ece9f8
+.labelClass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  color: #0d003b;
+  font-weight: none;
+  text-align: none;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.labelClass label {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.labelClass select {
+  font-size: none;
+  color: #555555;
+  font-weight: 500;
+  text-align: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 30px;
+  border: 1px solid #555555;
+  padding-left: 10px;
+}
+.labelClass input {
+  font-size: none;
+  color: #555555;
+  font-weight: 500;
+  text-align: none;
+  border-radius: 10px;
+  width: 170px;
+  border: 1px solid #555555;
+  height: 30px;
+  padding-left: 10px;
 }
 
-p.tutosPage{
-    color: #2b2929;
-    font-size: 16px;
-    text-align: justify;    
+#torneos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  justify-items: center;
+  align-items: none;
+  row-gap: 10px;
+}
+#torneos .inscripcionTorneos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+  grid-column: 1/2;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 1px 1px 6px 1px #969898;
+  width: 80%;
+  height: auto;
+  border-left: 3px solid green;
+}
+#torneos .inscripcionTorneos:first-child {
+  border-left-color: blue;
+}
+#torneos .inscripcionTorneosLogo {
+  width: 20%;
+}
+#torneos .inscripcionTorneosLogo img {
+  width: 100%;
+}
+#torneos .inscripcionTorneosInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  width: 80%;
+  padding-left: 20px;
+  gap: 10px;
+}
+#torneos .inscripcionTorneosInfo div {
+  display: flex;
+  flex: auto;
+  border-bottom: 2px solid #E9E9E9;
+  padding-bottom: 5px;
+}
+#torneos .summary {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 80%;
+}
+#torneos .summaryHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d003b;
+  color: white;
+  padding: 10px;
+}
+#torneos .summaryHeader button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#torneos .summaryHeader h2 {
+  font-size: 20px;
+  color: none;
+  font-weight: 400;
+  text-align: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+#torneos .summaryTorneo {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+}
+#torneos .summaryTorneo div {
+  background-color: white;
+  height: 100%;
+  padding: 10px;
+  text-align: left;
+  height: auto;
+  border-bottom: 1px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-left: 3px solid green;
+}
+#torneos .summaryTorneo h3 {
+  font-size: 20px;
+}
+#torneos .summaryTorneo p {
+  font-size: 16px;
+  cursor: pointer;
 }
 
-#store{
-    width: 100%; 
-    height: 400px; 
-    background-image: url('../images/store-banner/Bullpadel-web.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
+.searchButtonTorneo {
+  font-size: 14px;
+  color: white;
+  font-weight: none;
+  text-align: none;
+  padding: 4px 30px;
+  background-color: #6ede29;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.searchButtonTorneo:hover {
+  background-color: #0d003b;
 }
 
-.storeTitle{
-    padding: 20px;
+.torneoStartedButton {
+  font-size: 12px;
+  color: #0d003b;
+  font-weight: 550;
+  text-align: none;
+  padding: 5px 15px;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-left: auto;
+  height: 30px;
+  min-width: 85px;
+}
+.torneoStartedButton:hover {
+  background-color: #0d003b;
+  color: white;
 }
 
-.storeSubtitle{
-    font-size: 32px;
-    margin: 0;
-    padding: 20px;
-    color: #0d003b;
+.torneoPendingButton {
+  font-size: 12px;
+  color: #0d003b;
+  font-weight: 550;
+  text-align: none;
+  padding: 5px 15px;
+  background-color: lightgray;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  height: 30px;
+  min-width: 85px;
+}
+.torneoPendingButton:hover {
+  background-color: #6ede29;
+  color: white;
 }
 
-.col-md-3{
-    padding:0 12px;
-    margin: 0 !important;
+.tPaging {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+.tPaging ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
 
-.players{
-    width: 300px !important;
+[aria-expanded=false] > .expanded,
+[aria-expanded=true] > .collapsed {
+  display: none;
 }
 
-.col{
-    margin: 0 !important;
-    padding: 12px;
+#tutos {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+}
+#tutos h1 {
+  padding: 20px 0px;
+}
+#tutos h2 {
+  font-size: 26px;
+  color: #2b2929;
+  font-weight: none;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+#tutos h2:nth-of-type(2) {
+  background-color: #ece9f8;
+}
+#tutos .tutosGral {
+  display: flex;
+}
+#tutos .tutosGral:nth-of-type(2) {
+  background-color: #ece9f8;
+}
+#tutos .tutosGralText {
+  width: 60%;
+  padding: 20px;
+}
+#tutos .tutosGralText p {
+  font-size: 16px;
+  color: #2b2929;
+  font-weight: none;
+  text-align: justify;
+}
+#tutos .tutosGralVideo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding-bottom: 20px;
+}
+#tutos .tutosGralVideo iframe {
+  width: 500px;
+  height: 255px;
 }
 
-.row{
-    margin: 0 !important;
+#store {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/store-banner/Bullpadel-web.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main{        
-    background-color: #d9d7e1;
+.storeTitle {
+  padding: 20px;
 }
 
-.searchButton {
-    padding: 5px 40px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #6ede29;
-    color: white;
-    border-radius: 10px;
-    border: 1px solid white;
-    cursor: pointer;
-    margin-left: 5px;
+.storeSubtitle {
+  font-size: 36px;
+  color: #0d003b;
+  font-weight: none;
+  text-align: none;
+  margin: 0;
+  padding: 20px;
 }
 
-.searchButton:hover{
-    background-color: #0d003b;
+.col-md-3 {
+  padding: 0 12px;
+  margin: 0 !important;
 }
 
-.tiendaClass{
-    display: flex;
+.players {
+  width: 300px !important;
 }
 
-.card-title{
-    font-size: 26px;
-    color: #0d003b;
-    font-weight: 500;
+.col {
+  margin: 0 !important;
+  padding: 12px;
 }
 
-h6.card-title {
-    font-size: 16px;
-    color: #0d003b;
-    font-weight: bold;
+.row {
+  margin: 0 !important;
 }
 
-.tiendaClass p{
-    color: #0d003b;
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 20px;
+.card-img-overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: none;
+}
+.card-img-overlay h5 {
+  font-size: 46px;
+  color: white;
+  font-weight: none;
+  text-align: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  margin: 0;
 }
 
-p.itemsClass{
-    color: #2b2929;
-    font-weight: bold;
-    font-size: 16px;
+.card-body h5 {
+  font-size: 26px;
+  color: #0d003b;
+  font-weight: 500;
+  text-align: none;
+}
+.card-body h6 {
+  font-size: 16px;
+  color: #0d003b;
+  font-weight: bold;
+  text-align: none;
+}
+.card-body p {
+  font-size: 16px;
+  color: #0d003b;
+  font-weight: none;
+  text-align: none;
+}
+.card-body del {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 500;
+  text-align: none;
 }
 
-p.priceClass{
-    color: #0d003b;
-    font-size: 18px;
+#contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 4fr 2fr;
+  justify-items: none;
+  align-items: none;
+  background-color: #d9d7e1;
 }
-del.priceClass{
-    color: #555555;
-    font-size: 14px;
+#contact .contactTitle {
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/4;
+}
+#contact .contactPage {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: center;
+  grid-column: 1/4;
+}
+#contact .contactPageForm {
+  width: 50%;
+}
+#contact .contactPageForm .formClass {
+  font-size: none;
+  color: #0d003b;
+  font-weight: 300;
+  text-align: none;
+  padding: 30px;
+  width: 100%;
+}
+#contact .contactPageForm .formClass input {
+  border: 1px solid #b4b3b3;
+  border-radius: 10px;
+  width: 100%;
+  padding: 6px 0px 6px 12px;
+}
+#contact .contactPageForm .formClass .indexButton {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: none;
+  padding: 10px 30px;
+  background-color: #6ede29;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+#contact .contactPageForm .formClass .indexButton:hover {
+  background-color: #0d003b;
+}
+#contact .contactPageForm .formClass textarea {
+  border: 1px solid #b4b3b3;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+  padding: 6px 0px 6px 12px;
+}
+#contact .contactPageForm h2 {
+  font-size: 26px;
+  color: #0d003b;
+  font-weight: none;
+  text-align: center;
+}
+#contact .contactPageMap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 50%;
+}
+#contact .contactPageMap iframe {
+  width: 100%;
+  height: 90%;
+}
+#contact .infoClass {
+  display: flex;
+  width: 100%;
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+#contact .infoClassOffice, #contact .infoClassPhone, #contact .infoClassEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: none;
+  color: #363636;
+  font-weight: none;
+  text-align: center;
+  background-color: #f7f7f7;
+  width: 33.333%;
+  height: 100%;
+}
+#contact .infoClassEmail {
+  background-color: #e4e5c7;
+}
+#contact .infoClassPhone {
+  background-color: #2b2929;
+}
+#contact .infoClassPhone h3 {
+  color: #f7f7f7;
+}
+#contact .infoClassPhone p {
+  color: #f7f7f7;
 }
 
-.textTienda{
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 46px;
-    margin: 0;
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: space-between;
+  align-items: center;
+  background-color: #0d003b;
+  height: 100px;
+  padding: 0 12px;
 }
-
-.card-img-overlay{
-    display: flex;
-    align-items: end;
+footer img {
+  width: 100px;
 }
-
-#contact{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr 4fr 2fr;
-    background-color: #d9d7e1;
+footer h5 {
+  font-size: 12px;
+  color: white;
+  font-weight: lighter;
+  text-align: none;
+  margin-top: 10px;
 }
-
-.contactTitle{
-    grid-row: 1/2;
-    grid-column: 1/4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer .socialnetworks {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: center;
+  width: 100%;
 }
-
-.contactoPage{
-    display: flex;
-    justify-content: center;
-    grid-column: 1/4;
+footer .socialnetworks a {
+  padding: 0 10px;
 }
-
-.contactMap{
-    height: auto;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contactMap iframe{
-    width: 100%;
-    height: 90%;
-}
-
-.contactForm{
-    width: 50%;
-}
-
-.infoClass{
-    display: flex;
-    width: 100%;
-    grid-row: 3/4;
-    grid-column: 1/4;
-}
-
-.infoClassOffice{
-    background-color: #f7f7f7;
-    text-align: center;
-    color: #363636;
-    width: 33.333%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.infoClassEmail{
-    background-color: #e4e5c7;
-    text-align: center;
-    color: #363636;
-    width: 33.333%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.infoClassPhone{
-    background-color: #2b2929;
-    text-align: center;
-    color:#f7f7f7;
-    width: 33.333%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.infoClassPhone h3{
-    color: #f7f7f7;
-}
-
-.logoContacto{
-    width: 70px;
-}
-
-.contactoSubTitle{
-    text-align: center;
-    color: #0d003b;
-    font-size: 30px;
+footer .mailTo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: none;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-
-    .contenedorAcceso{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenedorAccesoButton{
-        width:100%;
-    }
-
-    .navImg img{
-        width: 70px;
-    }
-
-    .contenedorAccesoButton h3{
-        display: none;
-    }
-
-    .contenedorAccesoButton button{
-        padding: 5px 30px;
-    }
-
-    .titleIndex{    
-        font-size: 30px;
-    }
-
-    .bodyIndex{
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-
-    h3.bodyIndex{
-        font-size: 24px;
-    }
-
-    .contenedorAccesoImg{
-        display: flex;
-        padding: 20px 0;
-        justify-content: center;
-    }
-    .contenedorAccesoImg img{
-        width: 200px ;
-    }
-
-    .contenedorCardsPadre{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-        justify-content: center;
-    }
-
-    .contenedorCards{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .contenedorCards img{
-        margin: 0px 30px;
-    }
-    
-    .cardsText {
-        display: inline;
-    }
-
-    .contenedorNoCarrouselWeb{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        align-items: center;
-        justify-content: center;
-        display: none;
-    }
-
-    .mobileCarrousel{
-        display: initial;
-    }
-    .carousel{ 
-        height: 130px;
-    }
-
-    .carousel-indicators button{
-        height: 10px;
-        width: 10px;
-        color: #6ede29;
-        background-color: #6ede29;
-    }
-
-    .gridImage{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .gridImage img{
-        width: 10rem;
-    }
-
-    .bodyIndex{
-        text-align: center;
-        margin: 0;
-    }
-
-    #stepTorneo{
-        grid-template-columns: 1fr;
-        grid-template-rows: 9fr;
-        padding: 20px 0;
-        grid-gap: 10px;
-    }
-
-    .steps{
-        grid-column: 1/2;
-        grid-row: auto;    
-    }
-
-    #stepTorneo h3{
-        font-size: 24px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .linea {
-        display: none;
-    }
-
-    .contactoClass{
-        display: flex;  
-        flex-direction: column;
-    }
-
-    .contactoImg{
-        height: 420px;
-    }
-
-    .logosFooter{
-        width: 26px;
-    }
-
-    footer img{
-        width: 70px;
-    }
-
-    .socialnetworks div{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .socialnetworks a{
-        padding: 5px 10px;
-    }
-
-    .labelClass{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        color: #0d003b;
-        font-size: large;
-        margin-bottom: 10px;
-        padding: 20px;
-    }
-
-    .labelClass div{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    
-    .labelClass select{
-        width: 100%;
-    }
-    
-    .labelClass input{
-        width: 60%;
-    }
-
-    .summary{
-        display: none;
-    }
-
-    #torneos{
-        grid-template-columns: 1fr;
-    }
-
-    .inscripcionTorneos{
-        padding: 15px;
-    }
-
-    .logoTorneo{
-        display: none;
-    }
-
-    .infoTorneo{
-        width: 100%;
-    }
-
-    .torneosPage{
-        margin: 0;
-    }
-
-    h2.torneosPage{
-        font-size: 16px;
-        font-weight: bold;
-        align-self: center;
-    }
-
-    p.torneosPage{
-        font-size: 14px;
-    }
-
-    .tPaging{
-        grid-row: 7/8;
-    }
-
-    .tutosGral{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tutosGral:nth-of-type(1) {
-        flex-direction: column-reverse;
-    }
-
-    .tutosGral:nth-of-type(3) {
-        flex-direction: column-reverse;
-    }
-
-
-    .tutosVideo{
-        width: 100%;
-    }
-
-    .tutosText{
-        width: 100%;
-    }
-
-    h2.tutosPage{
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    p.tutosPage{
-        font-size: 14px;
-    }
-
-    .storeTitle{
-        font-size: 26px;
-        font-weight: bold;
-    }
-
-    .storeSubtitle{
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .col-md-3{
-        margin: 6px 0 !important;
-        display: flex;
-        justify-content: center;
-    }
-
-    .col-md-2{
-        display: flex;
-        justify-content: center;
-    }
-
-    .col{
-        display: flex;
-        justify-content: center;
-    }
-
-    .textTienda{
-        font-size: 36px;
-    }
-
-    .card{
-        width: 60%;
-    }
-
-    #contact{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 4fr 4fr;
-    }
-
-    .contactTitle{
-        grid-row: 1/2;
-        padding-top: 12px;
-    }
-
-    .contactTitle h1{
-        font-size: 26px;
-    }
-
-    .contactoSubTitle{
-        font-size: 20px;
-    }
-
-    .contactMap{
-        height: 400px;
-    }
-
-    .contactoPage{
-        grid-row: 2/3;
-        flex-direction: column-reverse;
-    }
-
-    .contactoPage div{
-        width: 100%;
-    }
-
-    .infoClass{
-        grid-row: 3/4;
-        flex-direction: column;
-    }
-
-    .infoClass div{
-        width: 100%;
-    }
+  .navHeader img {
+    width: 70px;
+  }
+  .bodyIndex {
+    text-align: center;
+    margin: 0;
+  }
+  h3.bodyIndex {
+    font-size: 24px;
+  }
+  .contenedorAcceso {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: none;
+  }
+  .contenedorAccesoButton {
+    width: 100%;
+  }
+  .contenedorAccesoButton h3 {
+    display: none;
+  }
+  .contenedorAccesoButton button {
+    padding: 5px 30px;
+  }
+  .contenedorAccesoButton div h1 {
+    font-size: 30px;
+  }
+  .contenedorAccesoButton div h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .contenedorAccesoButton div h3 {
+    font-size: 24px;
+  }
+  .contenedorAccesoImg {
+    display: flex;
+    flex-direction: none;
+    align-items: none;
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+  }
+  .contenedorAccesoImg img {
+    width: 200px;
+  }
+  .contenedorCards {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .contenedorCardsHijo {
+    display: flex;
+    flex-direction: row;
+    align-items: none;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .contenedorCardsHijo img {
+    margin: 0px 30px;
+  }
+  .contenedorCardsHijo p {
+    display: inline;
+  }
+  .contenedorNoCarrouselWeb {
+    display: none;
+  }
+  .mobileCarrousel {
+    display: initial;
+  }
+  .mobileCarrouselImage {
+    display: flex;
+    flex-direction: none;
+    align-items: none;
+    justify-content: center;
+  }
+  .mobileCarrouselImage img {
+    width: 10rem;
+  }
+  .mobileCarrousel .carousel {
+    height: 130px;
+  }
+  .mobileCarrousel .carousel-indicators button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #363636;
+  }
+  .mobileCarrousel button.active {
+    background-color: #6ede29;
+  }
+  #stepTorneo {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9fr;
+    justify-items: none;
+    align-items: none;
+    padding: 20px 0;
+    grid-gap: 10px;
+  }
+  #stepTorneo .steps {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+  #stepTorneo h3 {
+    font-size: 24px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #stepTorneo .linea {
+    display: none;
+  }
+  .contactoClass {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: none;
+  }
+  .contactoClassImg {
+    height: 420px;
+  }
+  footer img {
+    width: 70px;
+  }
+  .socialnetworks div {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: none;
+  }
+  .socialnetworks div .logosFooter {
+    width: 26px;
+  }
+  .socialnetworks a {
+    padding: 5px 10px;
+  }
+  .labelClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+    color: #0d003b;
+    font-weight: none;
+    text-align: none;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .labelClass div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .labelClass select {
+    width: 100%;
+  }
+  .labelClass input {
+    width: 60%;
+  }
+  #torneos {
+    grid-template-columns: 1fr;
+  }
+  #torneos .summary {
+    display: none;
+  }
+  #torneos .inscripcionTorneos {
+    padding: 15px;
+  }
+  #torneos .inscripcionTorneosLogo {
+    display: none;
+  }
+  #torneos .inscripcionTorneosInfo {
+    width: 100%;
+  }
+  #torneos .inscripcionTorneosInfo h2 {
+    font-size: 16px;
+    color: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  #torneos .inscripcionTorneosInfo p {
+    font-size: 14px;
+    margin: 0;
+  }
+  #torneos .tPaging {
+    grid-row: 7/8;
+  }
+  #tutos h1 {
+    font-size: 30px;
+  }
+  #tutos h2 {
+    font-size: 16px;
+    color: none;
+    font-weight: bold;
+    text-align: none;
+  }
+  #tutos .tutosGral {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: none;
+  }
+  #tutos .tutosGral:nth-of-type(1) {
+    flex-direction: column-reverse;
+  }
+  #tutos .tutosGral:nth-of-type(3) {
+    flex-direction: column-reverse;
+  }
+  #tutos .tutosGralText {
+    width: 100%;
+  }
+  #tutos .tutosGralText p {
+    font-size: 14px;
+  }
+  #tutos .tutosGralVideo {
+    width: 100%;
+  }
+  .storeTitle {
+    font-size: 26px;
+    color: none;
+    font-weight: bold;
+    text-align: none;
+  }
+  .storeSubtitle {
+    font-size: 20px;
+    color: none;
+    font-weight: bold;
+    text-align: none;
+  }
+  .col-md-3 {
+    display: flex;
+    flex-direction: none;
+    align-items: none;
+    justify-content: center;
+    margin: 6px 0 !important;
+  }
+  .col-md-2 {
+    display: flex;
+    flex-direction: none;
+    align-items: none;
+    justify-content: center;
+  }
+  .col-md-2 h6 {
+    font-size: 14px;
+  }
+  .col-md-2 p {
+    font-size: 16px;
+  }
+  .col {
+    display: flex;
+    flex-direction: none;
+    align-items: none;
+    justify-content: center;
+  }
+  .card {
+    width: 60%;
+  }
+  .card h5 {
+    font-size: 26px;
+  }
+  #contact {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 4fr 4fr;
+    justify-items: none;
+    align-items: none;
+  }
+  #contact .contactTitle {
+    grid-row: 1/2;
+    padding-top: 12px;
+  }
+  #contact .contactTitle h1 {
+    font-size: 26px;
+  }
+  #contact .contactPage {
+    grid-row: 2/3;
+    flex-direction: column-reverse;
+  }
+  #contact .contactPage div {
+    width: 100%;
+  }
+  #contact .contactPage h2 {
+    font-size: 20px;
+  }
+  #contact .contactPageMap {
+    height: 400px;
+  }
+  #contact .infoClass {
+    grid-row: 3/4;
+    flex-direction: column;
+  }
+  #contact .infoClass div {
+    width: 100%;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

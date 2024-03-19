@@ -1,0 +1,50 @@
+
+.navHeader{
+    background-color: $main-color;
+    opacity: 90%;
+    img{
+        width: 100px;
+    }
+}
+
+.contenedorAcceso{
+    display: flex;
+    background-image: url('../images/Banner-header.jpeg');
+    background-size: cover;
+    background-position-x: center;
+    padding-top: 10px;
+    &Button{
+        @include flex(flex,column,center,center);
+        width:70%;
+            h1{
+                padding: 30px 30px 10px 30px;
+                @include font($title-fontsize,#f7f7f7,500,center)
+            }
+            h2{
+                @include font($subtitle-fontsize,#f7f7f7,300,center)
+            }
+            h3{
+                padding:40px 10px 10px 10px;
+                @include font($mediumtitle-fontsize,#f7f7f7,300,center)
+            }
+        
+        button{
+            padding: 10px 40px;
+            border-radius: 15px;
+            border: 1px solid white;
+            cursor: pointer;
+            background-color: #6ede29;
+            color: white;
+            &:hover{
+                background-color: $main-color;
+                border: 1px solid white;
+            }
+        }
+    }
+    &Img{
+        padding-left: 10px;
+        img{
+            width: 300px ;
+        }
+    }
+}

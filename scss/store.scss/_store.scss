@@ -1,0 +1,67 @@
+#store{
+    width: 100%; 
+    height: 400px; 
+    background-image: url('../images/store-banner/Bullpadel-web.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.storeTitle{
+    padding: 20px;
+}
+
+.storeSubtitle{
+    @include font($title-fontsize,$main-color,none,none);
+    margin: 0;
+    padding: 20px;
+}
+
+//Clases Bootstrap //
+
+.col-md-3{
+    padding:0 12px;
+    margin: 0 !important;
+}
+
+.players{
+    width: 300px !important;
+}
+
+.col{
+    margin: 0 !important;
+    padding: 12px;
+}
+
+.row{
+    margin: 0 !important;
+}
+
+//6 Main Cards// 
+
+.card-img-overlay{
+    @include flex(flex,row,end,none);
+
+    h5{
+        @include font(46px, white, none,none);
+        font-family: "Bebas Neue", sans-serif;
+        font-style: normal;
+        margin: 0;
+    }
+}
+
+.card-body{
+    h5{
+        @include font($subtitle-fontsize, $main-color, 500,none);
+    }
+    h6{
+        @include font($p-fontsize, $main-color, bold,none);
+    }
+    p{
+        @include font($p-fontsize, $main-color, none,none);
+    }
+    del{
+        @include font($small-fontsize, #555555, 500,none);
+    }
+}

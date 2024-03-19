@@ -1,0 +1,170 @@
+//Filtros//
+
+.labelClass{
+    @include flex(flex,row,center,space-around);
+    @include font(large,$main-color,none,none);
+    margin-bottom: 10px;
+    padding: 20px;
+    label{
+        @include flex(flex,column,none,none);
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    select{
+        @include font(none,#555555,500,none);
+        border-radius: 5px;
+        width: 170px;
+        height: 30px;
+        border: 1px solid #555555;
+        padding-left: 10px;
+    }
+    input{
+        @include font(none,#555555,500,none);
+        border-radius: 10px;
+        width: 170px;
+        border: 1px solid #555555;
+        height: 30px;
+        padding-left: 10px;
+    }
+}
+
+//Cards Torneos//
+#torneos{
+    @include grid(grid,2fr 1fr,repeat(7,1fr),center,none);
+    row-gap: 10px;
+    .inscripcionTorneos{
+        @include flex(flex,row,center,none);
+        grid-column: 1/2;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        padding: 30px;
+        text-align: left;
+        box-shadow: 1px 1px 6px 1px #969898;
+        width: 80%;
+        height: auto;    
+        border-left: 3px solid green;
+        &:first-child {
+            border-left-color: blue;
+        }
+        &Logo{
+            width: 20%;
+            img{
+                width: 100%
+            }
+        }
+        &Info{
+            @include flex(flex,column,none,none);
+            width: 80%;
+            padding-left: 20px;
+            gap: 10px;
+            div{
+                display: flex;
+                flex: auto;
+                border-bottom: 2px solid #E9E9E9;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .summary{
+        @include flex(flex,column,none,none);
+        grid-column: 2/3;
+        grid-row: 1/3;
+        width: 80%;
+        &Header{
+            @include flex(flex,row,center,space-between);
+            background-color: $main-color;
+            color: white;
+            padding: 10px;
+            button{
+                background-color: transparent;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            h2{
+                @include font($mediumtitle-fontsize,none,400,none);
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+        &Torneo{
+            @include flex(flex,column,none,none);
+            div{
+                background-color: white;
+                height: 100%;
+                padding: 10px;
+                text-align: left;
+                height: auto;
+                border-bottom: 1px solid #cccccc;
+                border-right: 2px solid #cccccc;
+                border-left: 3px solid green;
+            }
+            h3{
+                font-size: $mediumtitle-fontsize;
+            }
+            p{
+                font-size: $p-fontsize;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//Buttons//
+
+.searchButtonTorneo{
+    @include font($small-fontsize,white,none,none);
+    padding: 4px 30px;
+    background-color: #6ede29;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    &:hover{
+        background-color: $main-color;
+    }
+}
+
+.torneoStartedButton{
+    @include font(12px,$main-color,550,none);
+    padding: 5px 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-left: auto;
+    height: 30px;
+    min-width: 85px;
+    &:hover{
+        background-color: $main-color;
+        color: white;
+    }
+}
+
+.torneoPendingButton{
+    @include font(12px,$main-color,550,none);
+    padding: 5px 15px;
+    background-color: lightgray;
+    cursor: pointer;
+    margin-left: auto;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    height: 30px;
+    min-width: 85px;
+    &:hover{
+        background-color: #6ede29;
+        color: white;
+    }
+}
+
+//Paging//
+.tPaging{
+    @include flex(flex,row,center,center);
+    grid-column: 1/2;
+    grid-row: 7/8;
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+}

@@ -1,0 +1,75 @@
+.navHeader {
+  background-color: #0d003b;
+  opacity: 90%;
+}
+.navHeader img {
+  width: 100px;
+}
+
+.contenedorAcceso {
+  display: flex;
+  background-image: url("../images/Banner-header.jpeg");
+  background-size: cover;
+  background-position-x: center;
+  padding-top: 10px;
+}
+.contenedorAccesoButton {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorAccesoButton div h1 {
+  color: #f7f7f7;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 30px 10px 30px;
+}
+.contenedorAccesoButton div h2 {
+  color: #f7f7f7;
+  text-align: center;
+  font-weight: 300;
+}
+.contenedorAccesoButton div h3 {
+  padding: 40px 10px 10px 10px;
+  color: #f7f7f7;
+  text-align: center;
+  font-weight: 300;
+}
+.contenedorAccesoButton button {
+  padding: 10px 40px;
+  border-radius: 15px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: #6ede29;
+  color: white;
+}
+.contenedorAccesoButton button:hover {
+  background-color: #0d003b;
+  border: 1px solid white;
+}
+.contenedorAccesoImg {
+  padding-left: 10px;
+}
+.contenedorAccesoImg img {
+  width: 300px;
+}
+
+body {
+  background-color: #d9d7e1;
+}
+
+.bodyIndex {
+  font-weight: bold;
+  color: #0d003b;
+}
+
+h3.bodyIndex {
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/*# sourceMappingURL=css.map */

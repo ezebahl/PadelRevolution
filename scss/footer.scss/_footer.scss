@@ -1,0 +1,24 @@
+footer{
+    @include grid(grid,1fr 2fr 1fr,1fr,space-between,center);
+    background-color: $main-color;
+    height: 100px;
+    padding: 0 12px;
+    img{
+        width: 100px;
+    }
+    h5{
+        @include font(12px,white,lighter,none);
+        margin-top: 10px;
+    }
+    .socialnetworks{
+        @include flex(flex,row,none,center);
+        width: 100%;
+        a{
+            padding: 0 10px;
+        }
+    }
+    .mailTo{
+        @include flex(flex,column,end,none);
+        width: 100%;
+    }
+}
