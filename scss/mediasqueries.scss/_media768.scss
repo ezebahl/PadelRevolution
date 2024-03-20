@@ -232,7 +232,7 @@
 
     //Contacto//
     #contact{
-        @include grid(none,1fr,0.2fr 4fr 4fr,none,none);
+        @include grid(grid,1fr,0.2fr 4fr 4fr,none,none);
         .contactTitle{
             grid-row: 1/2;
             padding-top: 12px;
