@@ -31,9 +31,18 @@
                 </div>
             </div>
         </div>
+        <div class="carrito-container">
+            <img id="carritoLogo" src="../images/store/carrito-de-compras.png" alt="Carrito" style="width: 30px; cursor: pointer;">
+        </div>
     </nav>    
-    
     <main>
+        <div class="modal" id="carritoModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <div id="items-carrito"></div>
+            </div>
+        </div>
         <section id="store">
         </section>
         <section>
@@ -93,48 +102,27 @@
               </div>
         </section>
         <section>
-            <div>    
-                <h2 class="storeSubtitle">Los más buscados</h2>
-            </div>
-                <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
-                    <div class="col-md-2">
-                        <div class="card h-100">
-                            <img src="../images/store/palas-folder/pala-bullpadel-vertex.avif" class="card-img-top" alt="bullpadel vertex 04">
-                            <div class="card-body">
-                                <h6>Bullpadel Vertex 04</h6>
-                                <p class="card-text">$299,9</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card h-100">
-                            <img src="../images/store/palas-folder/siux-stupa.avif" class="card-img-top" alt="siux fenix pro 4">
-                            <div class="card-body">
-                                <h6>Siux Fenix Pro 4</h6>
-                                <p class="card-text">$295,0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card h-100">
-                            <img src="../images/store/palas-folder/nox-tapia.avif" class="card-img-top" alt="nox at10 genius 18k by tapia24">
-                            <div class="card-body">
-                                <h6>NOX AT10 Genius 82k Agustin Tapia 2024</h6>
-                                <p class="card-text">$324,9</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card h-100">
-                            <img src="../images/store/palas-folder/adidas-adipower-multiweight-ctrl-33.avif" class="card-img-top" alt="adidas adipower multiweight 3.3">
-                            <div class="card-body">
-                                <h6>Adidas Adipower Multiweight 3.3</h6>
-                                <p class="card-text">$399,9</p>
-                            </div>
-                        </div>
-                    </div>
+            <section>
+                <div>    
+                    <h2 class="storeSubtitle">Los más buscados</h2>
+                    <div class="row" id="cards"></div>
                 </div>
-
+                
+                <!-- Correct usage of template -->
+                <template id="template-card">
+                    <div class="col-md-2">
+                        <div class="card h-100">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h6></h6>
+                                <p class="card-text"></p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </section>
+            </section>
         </section>
         <section>
             <div>    
@@ -235,5 +223,6 @@
     <script>
         AOS.init();
       </script>
+    <script async src="../js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+
+[
+    {
+        "id":1,
+        "title": "Bullpadel Vertex 04",
+        "price": 299.9,
+        "image": "../images/store/palas-folder/pala-bullpadel-vertex.avif"
+    },
+    {
+        "id":2,
+        "title": "Siux Fenix Pro 4",
+        "price": 295.0,
+        "image": "../images/store/palas-folder/siux-stupa.avif"
+    },
+    {
+        "id":3,
+        "title": "NOX AT10 Genius 82k Agustin Tapia 2024",
+        "price": 324.9,
+        "image": "../images/store/palas-folder/nox-tapia.avif"
+    },
+    {
+        "id":4,
+        "title": "Adidas Adipower Multiweight 3.3",
+        "price": 399.9,
+        "image": "../images/store/palas-folder/adidas-adipower-multiweight-ctrl-33.avif"
+    }
+]
