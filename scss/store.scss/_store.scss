@@ -70,10 +70,6 @@
 
 .carrito-container{
     margin-right: 20px;
-    img{
-        background-color: white;
-    }
-        
 }
 
 
@@ -114,7 +110,7 @@
 
 .carrito-header, .carrito-item {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr; 
     align-items: center;
     padding: 10px 0;
 }
@@ -134,6 +130,10 @@
 
 .carrito-price {
     text-align: right;
+}
+
+.carrito-remove{
+    text-align: center;
 }
 
 .carrito-total {

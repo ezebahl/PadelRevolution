@@ -647,9 +647,6 @@ p.bodyIndex {
 .carrito-container {
   margin-right: 20px;
 }
-.carrito-container img {
-  background-color: white;
-}
 
 .modal {
   display: none;
@@ -688,7 +685,7 @@ p.bodyIndex {
 
 .carrito-header, .carrito-item {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   align-items: center;
   padding: 10px 0;
 }
@@ -708,6 +705,10 @@ p.bodyIndex {
 
 .carrito-price {
   text-align: right;
+}
+
+.carrito-remove {
+  text-align: center;
 }
 
 .carrito-total {

@@ -4,10 +4,13 @@ let carrito = {}
 const fetchData = async () => {
     try {
         const res = await fetch('../items.json');
+        if (!res.ok) {
+            throw new Error('Network response was not ok');
+        }
         const data = await res.json();
         pintarCards(data);
     } catch (error) {
-        console.log(error);
+        console.log('Error fetching data:', error);
     }
 };
 
@@ -19,9 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const carritoLogo = document.getElementById('carritoLogo');
+    carritoLogo.innerHTML = '<i class="fa fa-shopping-cart" style="font-size: 1.5em;color: white;"></i>';
     carritoLogo.addEventListener('click', () => {
         mostrarModal();
     });
+
+
 });
 
 const mostrarModal = () => {
@@ -108,9 +114,13 @@ const pintarCarrito = () => {
     priceHeader.classList.add('carrito-price');
     priceHeader.textContent = 'Precio';
 
+    const removeHeader = document.createElement('div');
+    removeHeader.classList.add('carrito-remove');
+
     headerDiv.appendChild(titleHeader);
     headerDiv.appendChild(cantidadHeader);
     headerDiv.appendChild(priceHeader);
+    headerDiv.appendChild(removeHeader);
     fragment.appendChild(headerDiv);
 
     let total = 0;
@@ -131,9 +141,21 @@ const pintarCarrito = () => {
         priceDiv.classList.add('carrito-price');
         priceDiv.textContent = `$${producto.price}`;
 
+        const removeDiv = document.createElement('div');
+        removeDiv.classList.add('carrito-remove');
+        const removeBtn = document.createElement('button');
+        removeBtn.classList.add('btn');
+        removeBtn.innerHTML = '<i class="far fa-trash-alt" style="font-size: 1.2em;"></i>';        
+        removeBtn.dataset.id = producto.id;
+        removeBtn.addEventListener('click', () => {
+            eliminarProducto(producto.id);
+        });
+        removeDiv.appendChild(removeBtn);
+
         div.appendChild(titleDiv);
         div.appendChild(cantidadDiv);
         div.appendChild(priceDiv);
+        div.appendChild(removeDiv);
         fragment.appendChild(div);
 
         total += producto.cantidad * parseFloat(producto.price);
@@ -160,4 +182,9 @@ const pintarCarrito = () => {
 
     localStorage.setItem('carrito',JSON.stringify(carrito));
 
+};
+
+const eliminarProducto = id => {
+    delete carrito[id];
+    pintarCarrito();
 };
