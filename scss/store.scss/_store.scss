@@ -151,3 +151,163 @@
 .total-amount {
     text-align: right;
 }
+
+//botones de sumar y restar cantidad
+
+.cantidad-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d3d3d3; 
+    border-radius: 5px; 
+    padding: 5px 10px;
+    max-width: 120px;
+    margin: auto;
+}
+
+/* Estilo de los botones dentro del recuadro */
+.cantidad-container .btn-plus, .cantidad-container .btn-minus {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #333;
+}
+
+.cantidad-container .btn-plus:hover, .cantidad-container .btn-minus:hover {
+    color: #007bff; 
+}
+
+.cantidad-container .cantidad-numero {
+    margin: 0 10px; 
+    min-width: 30px; 
+    text-align: center; 
+    font-size: 1em;
+    color: #333; 
+}
+
+.cantidad-container .cantidad-input {
+    width: 40px;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    border: none;
+    background-color: transparent;
+    margin: 0 5px;
+}
+
+.cantidad-input::-webkit-outer-spin-button,
+.cantidad-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.btn-primary.loading {
+    padding: 0; 
+    min-width: 91px; 
+    min-height: 38px; 
+}
+
+.btn-primary.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    border-top-color: #007bff; 
+    animation: spin 1s linear infinite;
+    margin-top: 5px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#carritoCantidad {
+    position: absolute;
+    top: 8px; 
+    right: 8px; 
+    background-color: red; 
+    color: white; 
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em; 
+    font-weight: bold; 
+}
+
+
+.btn-continuar-compra {
+    background-color: #3483FA; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.btn-continuar-compra:hover {
+    background-color: #2968c8; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#mensajeFelicitaciones {
+    text-align: center;
+    align-self: center;
+    
+}
+
+.compra-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#confirmarCompraForm {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.resumen-compra {
+    flex: 0 0 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 32px;
+}
+
+.resumen-compra h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -33,6 +33,7 @@
             </div>
         </div>
         <div class="carrito-container" id="carritoLogo">
+            <span id="carritoCantidad"></span>
         </div>
     </nav>    
     <main>
@@ -41,8 +42,61 @@
                 <span class="close">&times;</span>
                 <h2>Carrito de Compras</h2>
                 <div id="items-carrito"></div>
+                <button id="continuarCompraBtn" class="btn-continuar-compra">Ir a pagar</button>
             </div>
         </div>
+        <body>
+            <div class="modal" id="confirmarCompraModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="confCompra">Confirmación de Compra</h2>
+                    <div class="compra-container">
+                        <div id="mensajeFelicitaciones" style="display: none;">
+                            <h3>¡Felicitaciones!</h3>
+                            <p>Su compra ha sido validada y finalizada exitosamente.</p>
+                            <button id="cerrarFelicitaciones" class="btn-continuar-compra">Cerrar</button>
+                        </div>
+                        <form id="confirmarCompraForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="metodoPago">Método de Pago</label>
+                                <select id="metodoPago" name="metodoPago" required>
+                                    <option value="mp">Mercado Pago</option>
+                                    <option value="tarjeta">Tarjeta de Crédito</option>
+                                    <option value="efectivo">Efectivo</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="tarjeta-info" style="display: none;">
+                                <label for="numeroTarjeta">Número de Tarjeta</label>
+                                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="1234 5678 9101 1121">
+                                <label for="fechaExpiracion">Fecha de Expiración</label>
+                                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+                            <button type="submit" class="btn-continuar-compra">Finalizar Compra</button>
+                        </form>
+                        <div class="resumen-compra">
+                            <h3>Resumen de Compra</h3>
+                            <p><strong>Producto:</strong> $<span id="monto">23</span></p>
+                            <p><strong>Dirección de Envío:</strong> Avenida Siempreviva 1234</p>
+                            <p><strong>Precio de Envío:</strong> $50</p>
+                            <p><strong>Total:</strong> $<span id="total">35</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <section id="store">
         </section>
         <section>
@@ -108,7 +162,6 @@
                     <div class="row" id="cards"></div>
                 </div>
                 
-                <!-- Correct usage of template -->
                 <template id="template-card">
                     <div class="col-md-2">
                         <div class="card h-100">
